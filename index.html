@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <title>RC Info - Tecnologia a seu serviço</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#">
+                        <img class="brand-logo" src="src/img/final logo.jpg" alt="logo">
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="sass.html">Sobre</a></li>
+                        <li>
+                            <a href="badges.html">Serviços</a>
+                        </li>
+                        <li><a href="collapsible.html">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="loader" id="loader"></div>
+
+    </header>
+
+    <div class="row">
+
+        <div class="col s12 m6 l6">
+
+            <img src="src/img/laptop.png" alt="notebook" id="notebook">
+
+        </div>
+
+        <div class="col s12 m6 l6">
+            <section id="main">
+                <img src="src/img/computer.png" id="pc" alt="computador">
+                <h1>SOBRE A EMPRESA</h1><br>
+                <p>- A iniciativa da empresa surgiu com a demanda de solucionar problemas comuns e incomuns, agilizando a vida dos clientes, tanto em ambiente empresarial como residencial. A empresa é nova mas temos experiência de mais de 10 anos de serviços
+                    com excelência no âmbito de suporte ao cliente e desenvolvimento. Temos clientes empresariais e pessoa física, fazemos contratos que viabilizam melhor seu negócio/serviço. Faça uma avaliação sem custos e agende uma visita caso esteja
+                    passando por dificuldades com seu computador. Estamos à disposição!!
+
+                    <br>
+                    <h1>NOSSO DIFERENCIAL</h1><br>
+
+                    <p>SOMOS UMA EMPRESA REGISTRADA!<br><br> Atendimento personalizado e experiência para assumir integralmente o gerenciamento do ambiente computacional.</p>
+                </p><br>
+            </section>
+        </div>
+
+    </div>
+
+    <section id="main">
+        <h1>SERVIÇOS</h1>
+        <h1>Nossa missão é a satisfação dos nossos clientes!</h1>
+
+        <main class="page-content">
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Assistência</h2>
+                    <p class="copy">Suporte técnico<br> help desk <br> visitas emergenciais<br> manutenção de micros</p>
+                    <button class="btn">Contate-nos!</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Cabeamento</h2>
+                    <p class="copy">Implantação de toda infraestrutura de rede<br>Padronização<br> Rede cabeada CAT5 e CAT6<br>Rede wireless<br>Montagem e organização de rack</p>
+                    <button class="btn">Contate-nos!</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Desenvolvimento</h2>
+                    <p class="copy">Criação de sites<br>edição de layouts<br>redesign<br>plataformas E-commerce</p>
+                    <button class="btn">Contate-nos</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Servidores Linux</h2>
+                    <p class="copy">Servidor de Dados<br>RAID<br>DHCP<br>PROXY<br>VPN<br>FIREWALL<br>Failover de Internet</p>
+                    <button class="btn">Contate-nos</button>
+                </div>
+            </div>
+        </main>
+
+    </section>
+
+
+
+
+
+    <footer>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">RCInfo - Soluções em Tecnologia</h5>
+                        <p class="grey-text text-lighten-3">Todos os direitos Reservados</p>
+                        <p class="grey-text text-lighten-3">CNPJ: 40372498000138</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Redes Sociais</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2022 RCInfo | Desenvolvido por Ruan Carlos
+                    <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+
+</body>
+
+<script>
+    var words = [
+        'Tecnologia à seu serviço!',
+        'Entrega de resultados',
+        'serviços de excelência',
+        'Manutenção com garantia!',
+
+    ];
+    var letters = "abcdefghijklmnopqrstuvwxyz#%&^+=-",
+        speed = 150,
+        steps = 20,
+        loader = document.querySelector('#loader');
+
+    function getRandomWord() {
+        var randomWord = words[Math.floor(Math.random() * words.length)];
+        return randomWord;
+    }
+
+    function getRandomLetter() {
+        var randomLetter = letters[Math.floor(Math.random() * letters.length)];
+        return randomLetter;
+    }
+
+    function randomWordLoop() {
+        var word = getRandomWord();
+        var textLength = word.length;
+        for (var i = 0; i < textLength; i++) {
+            (function(i, word) {
+                letterAppear(i, word);
+            })(i, word)
+        }
+
+        function letterAppear(i, word) {
+            setTimeout(function() {
+                randomLetters(i, word);
+            }, speed * i);
+        }
+
+        function randomLetters(i, word) {
+            for (var j = 0; j <= steps; j++) {
+                charsAnim(i, word, j);
+            }
+        }
+
+        function charsAnim(i, word, j) {
+            setTimeout(function() {
+                var count = j;
+                if (j < steps) {
+                    randomChar(i, word, count, j);
+                } else {
+                    goodChar(i, word, count, j);
+                }
+                /* seems it fails less if I divide j, don't know why */
+                /*}, (speed/steps)*(j / 1.8));*/
+            }, ((speed / steps) * j) - (speed / steps));
+        }
+
+        function randomChar(i, word, count, j) {
+            var letter = getRandomLetter();
+            if (j > 0) {
+                var oldText = loader.textContent.slice(0, -1);
+            } else {
+                var oldText = loader.textContent;
+            }
+            loader.textContent = oldText + letter;
+        }
+
+        function goodChar(i, word, count, j) {
+            var oldText = loader.textContent.slice(0, -1);
+            loader.textContent = oldText + word[i];
+            if (i == textLength - 1) {
+                removeWord();
+            }
+        }
+
+        function removeWord() {
+            setTimeout(function() {
+                for (var k = 0; k < textLength; k++) {
+                    removeLetters(k);
+                }
+            }, speed * 2);
+        }
+
+        function removeLetters(k) {
+            setTimeout(function() {
+                removeLetter(k);
+            }, 75 * k);
+        }
+
+        function removeLetter(k) {
+            var actualText = loader.textContent.slice(0, -1);
+            loader.textContent = actualText;
+            if (k == textLength - 1) {
+                randomWordLoop();
+            }
+        }
+    }
+
+    randomWordLoop();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
